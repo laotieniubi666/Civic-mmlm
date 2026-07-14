@@ -1,0 +1,11 @@
+{
+  "alpha": 0.2,
+  "threshold": 1.183376669883728,
+  "score_weights": {
+    "entropy": 1.0,
+    "contradiction": 0.7,
+    "identification": 0.4,
+    "constraint": 1.0
+  },
+  "calibration_size": 89
+}

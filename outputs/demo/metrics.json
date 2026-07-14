@@ -1,0 +1,56 @@
+{
+  "scope": "synthetic software-verification benchmark",
+  "metrics": {
+    "accuracy": 0.989010989010989,
+    "macro_f1": 0.9883412824589295,
+    "worst_group_accuracy": 0.9565217391304348,
+    "ece": 0.06495115128192273,
+    "conditional_eo_gap": 0.06457795202732086,
+    "coverage": 0.7582417582417582,
+    "selective_risk": 0.0
+  },
+  "risk_coverage": [
+    {
+      "coverage": 0.5,
+      "risk": 0.0
+    },
+    {
+      "coverage": 0.6,
+      "risk": 0.0
+    },
+    {
+      "coverage": 0.7,
+      "risk": 0.0
+    },
+    {
+      "coverage": 0.8,
+      "risk": 0.0
+    },
+    {
+      "coverage": 0.9,
+      "risk": 0.0
+    },
+    {
+      "coverage": 1.0,
+      "risk": 0.01098901098901095
+    }
+  ],
+  "robustness": [
+    {
+      "missing_atom_rate": 0.0,
+      "accuracy": 0.989010989010989
+    },
+    {
+      "missing_atom_rate": 0.2,
+      "accuracy": 0.989010989010989
+    },
+    {
+      "missing_atom_rate": 0.4,
+      "accuracy": 0.989010989010989
+    },
+    {
+      "missing_atom_rate": 0.6,
+      "accuracy": 0.978021978021978
+    }
+  ]
+}

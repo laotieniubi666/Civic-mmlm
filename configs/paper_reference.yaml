@@ -1,0 +1,38 @@
+# This file records the design stated in the manuscript. Values marked null were
+# not specified precisely enough to reconstruct without author artifacts.
+model:
+  language_backbone: "7B-class open model (exact checkpoint unspecified)"
+  vision_encoder: "frozen during warm-up (exact checkpoint unspecified)"
+  adaptation: "low-rank adapters"
+  modalities: [text, image, geospatial, tabular, audio_optional]
+  evidence_measure:
+    reliability_weighting: true
+    unbalanced_entropic_wasserstein: true
+    epsilon: null
+    rho: null
+    contradiction_threshold_kappa: null
+  intervention:
+    valid_intervention_js: true
+    material_sensitivity_margin: null
+  utility:
+    doubly_robust: true
+    outcome_weights: null
+  decision:
+    cvar_alpha: null
+    legality_constraints: true
+    capacity_constraints: true
+    fairness_conditioned_on_need: true
+  calibration:
+    conformal_delta: null
+  certificate:
+    hard_concrete_gates: true
+    sufficiency_epsilon: null
+    necessity_margin: null
+    entailment_threshold: null
+training:
+  seeds: 5
+  optimizer: null
+  learning_rate: null
+  batch_size: null
+  epochs: null
+  exact_data_snapshots: null

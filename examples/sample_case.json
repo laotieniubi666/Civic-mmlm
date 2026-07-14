@@ -1,0 +1,19 @@
+{
+  "sample_id": "illustrative-only",
+  "description": "Schema example; raw content must be encoded into evidence atoms before model input.",
+  "context": {
+    "language": "example-language",
+    "region": "example-region",
+    "time": "2026-07-14"
+  },
+  "actions": [
+    "no_action",
+    "remote_review",
+    "field_review",
+    "urgent_referral"
+  ],
+  "legality": [1, 1, 1, 1],
+  "budget": 0.8,
+  "action_costs": [0.2, 0.4, 0.7, 1.0],
+  "note": "No real person or administrative record is included."
+}

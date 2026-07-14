@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "CIVIC-MMLM Public Reference Implementation"
+message: "Cite the original paper for the method and this repository for the independent implementation."
+type: software
+version: 0.1.0
+date-released: 2026-07-14
+license: MIT
+abstract: >-
+  Independent, executable reconstruction of the CIVIC-MMLM method from its
+  published mathematical specification. The package does not contain the
+  original authors' code, checkpoints, or benchmark outputs.

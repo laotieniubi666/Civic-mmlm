@@ -1,0 +1,70 @@
+seed: 7
+runtime:
+  num_threads: 1
+
+
+data:
+  name: synthetic
+  size: 512
+  seed: 13
+  split_seed: 31
+  train_fraction: 0.65
+  dev_fraction: 0.175
+  atoms_per_modality: 5
+  num_groups: 4
+  missing_probability: 0.12
+  contradiction_probability: 0.16
+
+model:
+  modalities: [text, image, geo, table]
+  raw_dim: 16
+  hidden_dim: 32
+  num_actions: 4
+  evidence:
+    temperature: 0.7
+    alpha_provenance: 0.65
+    alpha_reliability: 0.65
+    alpha_contradiction: 1.0
+  barycenter:
+    num_slots: 4
+    epsilon: 0.35
+    rho: 1.0
+    sinkhorn_iterations: 4
+    barycenter_iterations: 2
+  utility:
+    weights: [1.0, -0.25, -1.0, -0.1]
+  decision:
+    utility_scale: 0.7
+    risk_scale: 0.35
+    temperature: 1.0
+  certificate:
+    gate_temperature: 0.7
+
+training:
+  epochs: 4
+  batch_size: 32
+  learning_rate: 0.002
+  weight_decay: 0.0001
+  max_grad_norm: 1.0
+  dual_learning_rate: 0.03
+  loss_weights:
+    task: 1.0
+    barycenter: 0.04
+    cultural: 0.25
+    sensitivity: 0.15
+    dr: 0.25
+    selective: 0.10
+    certificate: 0.18
+    fairness: 0.08
+    constraint: 0.25
+    certificate_sparsity: 0.02
+    certificate_necessity_margin: 0.15
+    material_margin: 0.35
+
+calibration:
+  alpha: 0.2
+  score_weights:
+    entropy: 1.0
+    contradiction: 0.7
+    identification: 0.4
+    constraint: 1.0

@@ -1,0 +1,57 @@
+{
+  "sample_id": "synthetic-000177",
+  "predicted_action": 1,
+  "accepted": true,
+  "nonconformity_score": 0.9922778606414795,
+  "threshold": 1.183376669883728,
+  "evidence": [
+    {
+      "modality": "text",
+      "atom_index": 0,
+      "support": 0.1357952207326889,
+      "provenance": 0.7132638692855835,
+      "reliability": 0.8483567237854004,
+      "contradiction": 0.0
+    },
+    {
+      "modality": "table",
+      "atom_index": 1,
+      "support": 0.10353277623653412,
+      "provenance": 0.8527534008026123,
+      "reliability": 0.8233881592750549,
+      "contradiction": 0.0
+    },
+    {
+      "modality": "text",
+      "atom_index": 2,
+      "support": 0.10282222926616669,
+      "provenance": 0.8938039541244507,
+      "reliability": 0.8935830593109131,
+      "contradiction": 0.0
+    },
+    {
+      "modality": "image",
+      "atom_index": 1,
+      "support": 0.09037024527788162,
+      "provenance": 0.7996617555618286,
+      "reliability": 0.6883057355880737,
+      "contradiction": 0.0
+    },
+    {
+      "modality": "image",
+      "atom_index": 4,
+      "support": 0.08924954384565353,
+      "provenance": 0.7736079692840576,
+      "reliability": 0.7982595562934875,
+      "contradiction": 0.0
+    },
+    {
+      "modality": "table",
+      "atom_index": 0,
+      "support": 0.08189718425273895,
+      "provenance": 0.8117430210113525,
+      "reliability": 0.666570246219635,
+      "contradiction": 0.0
+    }
+  ]
+}
